@@ -1,31 +1,51 @@
-# Semantic-Text-Similarity-SBERT
-This project explores semantic text similarity, clustering, and query-based retrieval using Sentence-BERT (SBERT). It processes the SNLI dataset, extracts sentence embeddings, and applies ML techniques for analysis. Features include cosine similarity, K-Means clustering, PCA visualization, and diverse query-based retrieval.
+# 📘 Semantic Text Similarity Using SBERT  
 
-**Key Features**
-🔹 Dataset Preprocessing
-Loaded the SNLI dataset and extracted premises, hypotheses, and labels.
-Removed missing values and performed class balancing using resampling techniques.
+## 📌 Project Overview  
+This project explores semantic text similarity, clustering, and query-based retrieval using **Sentence-BERT (SBERT)**.  
 
-🔹 Sentence Embeddings with SBERT
-Used three different Sentence-BERT models to generate sentence embeddings:
-all-MiniLM-L6-v2 – Optimized for efficient sentence embeddings.
-paraphrase-MiniLM-L6-v2 – Fine-tuned for paraphrase detection.
-all-distilroberta-v1 – Uses DistilRoBERTa, a lighter alternative to RoBERTa.
+The SNLI dataset was processed to generate sentence embeddings, compute similarity scores, perform clustering, and enable intelligent semantic search.
 
-🔹 Semantic Similarity Analysis
-Computed cosine similarity between premise-hypothesis pairs.
-Retrieved top-N similar sentences for a given query.
-Visualized embedding differences between premise-hypothesis pairs.
+## 🎯 Objectives  
+• Generate high-quality sentence embeddings using SBERT  
+• Compute semantic similarity between sentence pairs  
+• Perform clustering on sentence embeddings  
+• Visualize high-dimensional embeddings  
+• Implement query-based semantic retrieval  
 
-🔹 Sentence Clustering & Visualization
-Applied K-Means clustering to categorize sentence embeddings into groups.
-Used PCA to reduce dimensions and visualize clusters.
+## 📊 Dataset  
+• SNLI (Stanford Natural Language Inference) dataset  
+• Extracted premises, hypotheses, and labels  
+• Removed missing values  
+• Applied class balancing using resampling techniques  
 
-🔹 Interactive Query-Based Retrieval
-Implemented query embedding to find the most semantically similar sentences from the dataset.
-Ensured diversity in retrieval by avoiding duplicate results.
-Technologies Used
-Python, scikit-learn, matplotlib, seaborn
-Hugging Face Datasets & Transformers
-SentenceTransformers Library
-XGBoost (for future classification tasks)
+## 🧠 Sentence Embedding Models  
+
+• `all-MiniLM-L6-v2` – Efficient and lightweight sentence embeddings  
+• `paraphrase-MiniLM-L6-v2` – Fine-tuned for paraphrase detection  
+• `all-distilroberta-v1` – DistilRoBERTa-based embedding model  
+
+## 📈 Semantic Similarity Analysis  
+• Computed cosine similarity between premise-hypothesis pairs  
+• Retrieved Top-N most similar sentences for a query  
+• Compared embedding differences across models  
+
+## 🔍 Clustering & Visualization  
+• Applied K-Means clustering on sentence embeddings  
+• Used PCA for dimensionality reduction  
+• Visualized clusters to analyze semantic grouping  
+
+## 🔎 Query-Based Retrieval  
+• Implemented semantic search using query embeddings  
+• Retrieved most relevant sentences from dataset  
+• Ensured diversity by avoiding duplicate results  
+
+## 🚀 Tech Stack  
+• Python  
+• Scikit-learn  
+• Matplotlib, Seaborn  
+• Hugging Face Datasets & Transformers  
+• SentenceTransformers Library  
+• XGBoost (for future classification extensions)  
+
+## 📌 Conclusion  
+This project demonstrates how SBERT embeddings can power semantic similarity analysis, clustering, and intelligent retrieval systems. It highlights the effectiveness of transformer-based embeddings for capturing contextual meaning in natural language tasks.
